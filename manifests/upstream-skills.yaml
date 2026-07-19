@@ -1,0 +1,50 @@
+version: 1
+policy:
+  install_from_original_source: true
+  review_before_execution: true
+  pin_commit_or_release: true
+skills:
+  alguffa:
+    - expo/building-native-ui
+    - expo/native-data-fetching
+    - expo/expo-cicd-workflows
+    - expo/expo-deployment
+    - anthropics/frontend-design
+    - anthropics/webapp-testing
+    - testmu-ai/api-skill
+    - testmu-ai/cypress-skill
+    - testmu-ai/detox-skill
+    - getsentry/sentry-react-native-sdk
+    - getsentry/sentry-react-sdk
+    - getsentry/sentry-node-sdk
+  n8n:
+    repository: czlonkowski/n8n-skills
+    selected:
+      - n8n-expression-syntax
+      - n8n-mcp-tools-expert
+      - n8n-workflow-patterns
+      - n8n-validation-expert
+      - n8n-node-configuration
+      - n8n-code-javascript
+      - n8n-error-handling
+      - n8n-binary-data
+      - n8n-sub-workflows
+      - n8n-ai-agents
+      - n8n-self-hosting
+  database:
+    - supabase/postgres-best-practices
+  security:
+    - trailofbits/audit-context-building
+    - trailofbits/differential-review
+    - trailofbits/insecure-defaults
+    - trailofbits/sharp-edges
+    - trailofbits/static-analysis
+    - trailofbits/semgrep-rule-creator
+    - trailofbits/variant-analysis
+    - trailofbits/property-based-testing
+  automation:
+    - anthropics/mcp-builder
+    - anthropics/skill-creator
+    - testmu-ai/cicd-pipeline-skill
+    - getsentry/sentry-workflow
+    - getsentry/sentry-create-alert
