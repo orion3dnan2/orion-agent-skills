@@ -31,6 +31,22 @@ skills:
       - n8n-sub-workflows
       - n8n-ai-agents
       - n8n-self-hosting
+  ruflo-skills:
+    repository: ruvnet/ruflo
+    license: MIT
+    install_mode: original-source-pinned
+    selected:
+      - ruflo-workflows
+      - ruflo-security-audit
+      - ruflo-migrations
+      - ruflo-testgen
+      - ruflo-browser
+    production_controls:
+      human_approval_required: true
+      autonomous_merge: false
+      autonomous_deployment: false
+      autonomous_production_migrations: false
+      persistent_memory_requires_encryption: true
   database:
     - supabase/postgres-best-practices
   security:
