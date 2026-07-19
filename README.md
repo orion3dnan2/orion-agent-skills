@@ -9,6 +9,7 @@ A curated, security-reviewed skills library for Claude Code, Codex, and engineer
 - `database`: PostgreSQL migrations, RLS, backup and restore.
 - `security`: secrets, webhook verification, VPS hardening and secure defaults.
 - `automation`: GitHub + Codex + n8n orchestration with human approval gates.
+- `ruflo-skills`: curated workflow, security audit, migration, test generation, and browser-testing skills based on `ruvnet/ruflo`.
 
 ## Repository layout
 
@@ -19,6 +20,12 @@ skills/
   database/
   n8n/
   security/
+  ruflo-skills/
+    workflows/
+    security-audit/
+    migrations/
+    testgen/
+    browser/
 manifests/
 scripts/
 docs/
@@ -34,6 +41,19 @@ SECURITY.md
 3. Review upstream licensing and pin the source revision before importing external skills.
 4. Never place secrets in files, prompts, workflow JSON or git history.
 5. Run project tests and security checks before merge or deployment.
+6. Require human approval before production deployment, database execution, credential changes, destructive actions, or PR merge.
+
+## Ruflo Skills
+
+The curated bundle is available under `skills/ruflo-skills/` and includes:
+
+- `ruflo-workflows`
+- `ruflo-security-audit`
+- `ruflo-migrations`
+- `ruflo-testgen`
+- `ruflo-browser`
+
+These are safe Orion routing and operating instructions. Install executable Ruflo plugins only from the original `ruvnet/ruflo` source, pinned to a reviewed release or commit.
 
 ## Upstream catalog
 
